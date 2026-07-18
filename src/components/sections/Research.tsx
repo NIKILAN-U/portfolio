@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 
 export function Research() {
   return (
-    <section id="research" className="relative py-28">
+    <section id="research" className="relative py-16 sm:py-24 lg:py-28">
       <div className="section-container">
         <SectionHeading
           eyebrow="Research"

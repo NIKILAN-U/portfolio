@@ -210,6 +210,26 @@ export const featuredProjects: Project[] = [
     year: "2025",
     status: "Shipped",
   },
+  {
+    slug: "baha-super-market-billing",
+    name: "Baha Super Market Billing Software",
+    description:
+      "Retail billing system built for Baha Super Market — product catalog and inventory tracking, invoicing with GST/tax calculation, customer records, and sales reporting.",
+    stack: ["MERN", "Billing", "Inventory", "GST/Tax"],
+    category: "Full Stack",
+    year: "2026",
+    status: "Shipped",
+  },
+  {
+    slug: "sri-samy-trader-billing",
+    name: "Sri Samy Trader Billing Software",
+    description:
+      "Retail billing system built for Sri Samy Trader — product catalog and inventory tracking, invoicing with GST/tax calculation, customer records, and sales reporting.",
+    stack: ["MERN", "Billing", "Inventory", "GST/Tax"],
+    category: "Full Stack",
+    year: "2026",
+    status: "Shipped",
+  },
 ];
 
 export const skills = [

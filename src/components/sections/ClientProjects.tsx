@@ -39,7 +39,7 @@ function ClientProjectCard({ project, index }: { project: ClientProject; index: 
       <div className="p-6 sm:p-8">
         <p className="text-sm text-muted">{project.description}</p>
 
-        <div className="mt-6 flex gap-1 rounded-full border border-foreground/10 bg-foreground/[0.04] p-1">
+        <div className="mt-6 flex gap-1 rounded-2xl border border-foreground/10 bg-foreground/[0.04] p-1 sm:rounded-full">
           {TABS.map((t) => (
             <button
               key={t}
@@ -47,7 +47,7 @@ function ClientProjectCard({ project, index }: { project: ClientProject; index: 
               onClick={() => setTab(t)}
               suppressHydrationWarning
               className={cn(
-                "flex-1 rounded-full px-3 py-2 text-xs font-medium transition-colors",
+                "flex-1 rounded-xl px-2 py-2 text-[0.68rem] font-medium leading-tight transition-colors sm:rounded-full sm:px-3 sm:text-xs",
                 tab === t ? "bg-primary text-foreground" : "text-muted hover:text-foreground"
               )}
             >
@@ -91,7 +91,7 @@ function ClientProjectCard({ project, index }: { project: ClientProject; index: 
 
 export function ClientProjects() {
   return (
-    <section id="client-projects" className="relative py-28">
+    <section id="client-projects" className="relative py-16 sm:py-24 lg:py-28">
       <div className="section-container">
         <SectionHeading
           eyebrow="Client Work"

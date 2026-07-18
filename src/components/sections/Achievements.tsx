@@ -9,7 +9,7 @@ const icons = [Trophy, FileCheck2, Globe, Award, Blocks];
 
 export function Achievements() {
   return (
-    <section id="achievements" className="relative py-28">
+    <section id="achievements" className="relative py-16 sm:py-24 lg:py-28">
       <div className="section-container">
         <SectionHeading
           eyebrow="Achievements"

@@ -35,12 +35,12 @@ export function Hero() {
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.15 }}
-                  className="flex aspect-square flex-col justify-between rounded-3xl bg-accent/25 p-5"
+                  className="flex aspect-square flex-col justify-between rounded-3xl bg-accent/25 p-4 sm:p-5"
                 >
                   <span className="font-mono-tag text-xs font-semibold uppercase tracking-widest text-foreground/70">
                     Focus
                   </span>
-                  <p className="font-display text-lg font-extrabold leading-tight text-foreground">
+                  <p className="font-display text-sm font-extrabold leading-tight text-foreground xs:text-base sm:text-lg">
                     MERN &middot; AI &middot; Blockchain
                   </p>
                 </motion.div>
@@ -58,12 +58,12 @@ export function Hero() {
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
-                  className="flex aspect-square flex-col justify-between rounded-3xl bg-sunshine/40 p-5"
+                  className="flex aspect-square flex-col justify-between rounded-3xl bg-sunshine/40 p-4 sm:p-5"
                 >
                   <span className="font-mono-tag text-xs font-semibold uppercase tracking-widest text-foreground/70">
                     Status
                   </span>
-                  <p className="font-display text-lg font-extrabold leading-tight text-foreground">
+                  <p className="font-display text-sm font-extrabold leading-tight text-foreground xs:text-base sm:text-lg">
                     Open to Work
                   </p>
                 </motion.div>
@@ -72,12 +72,12 @@ export function Hero() {
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
-                  className="grid-backdrop relative flex aspect-square flex-col justify-between rounded-3xl border-2 border-foreground/10 bg-background p-5"
+                  className="grid-backdrop relative flex aspect-square flex-col justify-between rounded-3xl border-2 border-foreground/10 bg-background p-4 sm:p-5"
                 >
                   <span className="font-mono-tag text-xs font-semibold uppercase tracking-widest text-muted">
                     Based in
                   </span>
-                  <p className="font-display text-lg font-extrabold leading-tight text-foreground">
+                  <p className="font-display text-sm font-extrabold leading-tight text-foreground xs:text-base sm:text-lg">
                     Coimbatore, IN
                   </p>
                 </motion.div>
@@ -99,7 +99,7 @@ export function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.15 }}
-                className="mt-2 text-[2.6rem] font-black uppercase leading-[0.98] tracking-tight sm:text-6xl lg:text-6xl xl:text-7xl"
+                className="mt-2 text-4xl font-black uppercase leading-[0.98] tracking-tight xs:text-[2.6rem] sm:text-6xl xl:text-7xl"
               >
                 <span className="block text-accent">Full Stack</span>
                 <span className="block text-foreground">Software</span>
@@ -128,7 +128,7 @@ export function Hero() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.38 }}
-                className="mt-7 inline-flex flex-wrap items-center gap-x-3 gap-y-2 rounded-full border-2 border-foreground/10 bg-background px-5 py-3 text-xs font-semibold text-foreground sm:text-sm"
+                className="mt-7 inline-flex flex-wrap items-center gap-x-3 gap-y-2 rounded-2xl border-2 border-foreground/10 bg-background px-4 py-3 text-xs font-semibold text-foreground sm:rounded-full sm:px-5 sm:text-sm"
               >
                 {highlights.map((item, i) => (
                   <span key={item} className="flex items-center gap-3">
@@ -172,7 +172,7 @@ export function Hero() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub"
-                    className="flex h-9 w-9 items-center justify-center rounded-full bg-foreground text-background transition-transform hover:-translate-y-0.5"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground text-background transition-transform hover:-translate-y-0.5"
                   >
                     <Github className="h-4 w-4" />
                   </a>
@@ -181,14 +181,14 @@ export function Hero() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    className="flex h-9 w-9 items-center justify-center rounded-full bg-foreground text-background transition-transform hover:-translate-y-0.5"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground text-background transition-transform hover:-translate-y-0.5"
                   >
                     <Linkedin className="h-4 w-4" />
                   </a>
                   <a
                     href={`mailto:${profile.email}`}
                     aria-label="Email"
-                    className="flex h-9 w-9 items-center justify-center rounded-full bg-foreground text-background transition-transform hover:-translate-y-0.5"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground text-background transition-transform hover:-translate-y-0.5"
                   >
                     <Mail className="h-4 w-4" />
                   </a>

@@ -48,7 +48,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="relative py-28">
+    <section id="contact" className="relative py-16 sm:py-24 lg:py-28">
       <div className="section-container">
         <SectionHeading
           eyebrow="Contact"
@@ -73,6 +73,7 @@ export function Contact() {
                   required
                   value={form.name}
                   onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
+                  suppressHydrationWarning
                   className="w-full rounded-xl border border-foreground/10 bg-foreground/[0.04] px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-accent"
                   placeholder="Jane Doe"
                 />
@@ -85,6 +86,7 @@ export function Contact() {
                   required
                   value={form.email}
                   onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
+                  suppressHydrationWarning
                   className="w-full rounded-xl border border-foreground/10 bg-foreground/[0.04] px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-accent"
                   placeholder="jane@company.com"
                 />
@@ -98,6 +100,7 @@ export function Contact() {
                 required
                 value={form.subject}
                 onChange={(e) => setForm((f) => ({ ...f, subject: e.target.value }))}
+                suppressHydrationWarning
                 className="w-full rounded-xl border border-foreground/10 bg-foreground/[0.04] px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-accent"
                 placeholder="Role, project, or collaboration"
               />
@@ -111,6 +114,7 @@ export function Contact() {
                 rows={5}
                 value={form.message}
                 onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
+                suppressHydrationWarning
                 className="w-full resize-none rounded-xl border border-foreground/10 bg-foreground/[0.04] px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-accent"
                 placeholder="Tell me a bit about what you're building…"
               />

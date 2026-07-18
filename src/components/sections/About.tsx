@@ -8,7 +8,7 @@ import { ReadMore } from "@/components/ui/ReadMore";
 
 export function About() {
   return (
-    <section id="about" className="relative py-28">
+    <section id="about" className="relative py-16 sm:py-24 lg:py-28">
       <div className="section-container">
         <SectionHeading
           eyebrow="About"

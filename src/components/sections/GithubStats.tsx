@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Github, GitFork, Star, Users, BookMarked } from "lucide-react";
 import { profile } from "@/data/content";
@@ -72,7 +71,7 @@ export function GithubStats() {
   ];
 
   return (
-    <section id="github" className="relative py-28">
+    <section id="github" className="relative py-16 sm:py-24 lg:py-28">
       <div className="section-container">
         <SectionHeading
           eyebrow="GitHub"
@@ -91,26 +90,6 @@ export function GithubStats() {
             </div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.5 }}
-          className="gradient-border mb-8 overflow-x-auto bg-surface/60 p-6 backdrop-blur-xl"
-        >
-          <p className="font-mono-tag mb-4 text-xs uppercase tracking-[0.2em] text-muted">
-            Contribution Calendar
-          </p>
-          <Image
-            src={`https://ghchart.rshah.org/7C8CF0/${profile.githubUser}`}
-            alt={`${profile.name} GitHub contribution chart`}
-            width={870}
-            height={110}
-            unoptimized
-            className="min-w-[720px]"
-          />
-        </motion.div>
 
         {status === "error" ? (
           <p className="text-sm text-muted">

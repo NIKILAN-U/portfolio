@@ -99,7 +99,7 @@ export function FeaturedProjects() {
   );
 
   return (
-    <section id="projects" className="relative py-28">
+    <section id="projects" className="relative py-16 sm:py-24 lg:py-28">
       <div className="section-container">
         <SectionHeading
           eyebrow="Featured Work"
